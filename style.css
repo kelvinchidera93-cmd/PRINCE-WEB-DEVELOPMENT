@@ -5,13 +5,13 @@ body {
   padding: 20px;
 }
 h1{
-  color; #38bdf8;
+  color: #38bdf8;
 }
 h2, h3 {
   color: #22c55e;
 }
 div {
-  bacground: #1e293b;
+  background: #1e293b;
   padding:15px;
   border-radius: 10px;
   margin-bottom: 15px;
@@ -20,16 +20,23 @@ a {
   color: #facc15;
   text-decoration: none;
 }
-a: hoever {
+a:hover {
  text-decoration: underline;
 }
 
 /* Map Container */
 .map-container {
   margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   background: #1e293b;
   padding: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.map-container iframe {
+  border: none;
 }
