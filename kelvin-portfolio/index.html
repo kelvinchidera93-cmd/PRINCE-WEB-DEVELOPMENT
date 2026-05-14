@@ -15,8 +15,8 @@
     }
 
     body{
-      background:#0f172a;
-      color:white;
+      background:#e0f2fe;
+      color:#0f172a;
       line-height:1.6;
     }
 
@@ -25,25 +25,26 @@
       justify-content:space-between;
       align-items:center;
       padding:20px 10%;
-      background:#111827;
+      background:white;
       position:sticky;
       top:0;
       z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,0.1);
     }
 
     header h2{
-      color:#38bdf8;
+      color:#0ea5e9;
     }
 
     nav a{
-      color:white;
       text-decoration:none;
       margin-left:20px;
-      transition:0.3s;
+      color:#0f172a;
+      font-weight:bold;
     }
 
     nav a:hover{
-      color:#38bdf8;
+      color:#0ea5e9;
     }
 
     .hero{
@@ -56,19 +57,18 @@
 
     .hero h1{
       font-size:4rem;
-      color:#38bdf8;
+      color:#0ea5e9;
     }
 
     .hero h3{
       margin-top:10px;
-      font-size:1.5rem;
-      color:#cbd5e1;
+      color:#334155;
     }
 
     .hero p{
       margin-top:20px;
       max-width:700px;
-      color:#94a3b8;
+      color:#475569;
     }
 
     .buttons{
@@ -78,8 +78,8 @@
     .btn{
       display:inline-block;
       padding:12px 25px;
-      background:#38bdf8;
-      color:black;
+      background:#0ea5e9;
+      color:white;
       text-decoration:none;
       border-radius:5px;
       margin-right:15px;
@@ -87,9 +87,9 @@
     }
 
     .btn-outline{
-      border:2px solid #38bdf8;
-      color:#38bdf8;
       background:transparent;
+      border:2px solid #0ea5e9;
+      color:#0ea5e9;
     }
 
     .features{
@@ -98,6 +98,7 @@
 
     .features p{
       margin-bottom:10px;
+      font-weight:bold;
     }
 
     section{
@@ -113,12 +114,14 @@
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
       gap:20px;
+      margin-top:30px;
     }
 
     .card{
-      background:#1e293b;
+      background:white;
       padding:30px;
       border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
       transition:0.3s;
     }
 
@@ -128,7 +131,7 @@
 
     .card h3{
       margin:15px 0;
-      color:#38bdf8;
+      color:#0ea5e9;
     }
 
     .contact-box{
@@ -139,9 +142,10 @@
     }
 
     .contact-card{
-      background:#1e293b;
+      background:white;
       padding:20px;
       border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
     }
 
     form{
@@ -156,17 +160,23 @@
       border:none;
       border-radius:5px;
       outline:none;
-      background:#1e293b;
-      color:white;
+      background:white;
+      box-shadow:0 2px 5px rgba(0,0,0,0.1);
     }
 
     textarea{
       height:150px;
     }
 
+    button{
+      border:none;
+      cursor:pointer;
+    }
+
     footer{
-      background:#111827;
-      padding:40px 10%;
+      background:black;
+      color:white;
+      padding:50px 10%;
       margin-top:50px;
     }
 
@@ -184,19 +194,42 @@
       margin-top:10px;
     }
 
+    footer a:hover{
+      color:#0ea5e9;
+    }
+
     .copyright{
       text-align:center;
       margin-top:30px;
       color:#94a3b8;
     }
 
+    @media(max-width:768px){
+
+      header{
+        flex-direction:column;
+      }
+
+      nav{
+        margin-top:15px;
+      }
+
+      .hero h1{
+        font-size:2.5rem;
+      }
+
+    }
+
   </style>
+
 </head>
 
 <body>
 
   <!-- HEADER -->
+
   <header>
+
     <h2>Kelvin Chidera</h2>
 
     <nav>
@@ -205,16 +238,20 @@
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
+
   </header>
 
-  <!-- HERO -->
+  <!-- HERO SECTION -->
+
   <section class="hero" id="home">
 
     <h4>Hi, I'm</h4>
 
     <h1>Kelvin Chidera</h1>
 
-    <h3>Web Developer | Designer | Creative Problem Solver</h3>
+    <h3>
+      Web Developer | Designer | Creative Problem Solver
+    </h3>
 
     <p>
       I create beautiful, responsive, and modern websites
@@ -222,23 +259,33 @@
     </p>
 
     <div class="buttons">
-      <a href="#contact" class="btn">Get In Touch</a>
+
+      <a href="#contact" class="btn">
+        Get In Touch
+      </a>
 
       <a href="#services" class="btn btn-outline">
         View My Services
       </a>
+
     </div>
 
     <div class="features">
+
       <p>✓ Responsive & Modern Web Design</p>
+
       <p>✓ Fast & Secure Development</p>
+
       <p>✓ SEO Optimized Websites</p>
+
       <p>✓ 24/7 Support & Maintenance</p>
+
     </div>
 
   </section>
 
   <!-- ABOUT -->
+
   <section id="about">
 
     <div class="section-title">
@@ -250,16 +297,13 @@
       stunning, user-friendly websites.
     </p>
 
-    <br><br>
-
     <div class="cards">
 
       <div class="card">
         <h1>🎯</h1>
         <h3>Professional</h3>
         <p>
-          Dedicated to delivering high-quality work
-          that exceeds expectations.
+          Dedicated to delivering high-quality work.
         </p>
       </div>
 
@@ -267,7 +311,7 @@
         <h1>🚀</h1>
         <h3>Innovative</h3>
         <p>
-          Always exploring new technologies and design trends.
+          Always exploring new technologies.
         </p>
       </div>
 
@@ -275,7 +319,7 @@
         <h1>💡</h1>
         <h3>Creative</h3>
         <p>
-          Bringing unique ideas to life with beautiful designs.
+          Bringing unique ideas to life.
         </p>
       </div>
 
@@ -283,7 +327,7 @@
         <h1>🤝</h1>
         <h3>Reliable</h3>
         <p>
-          Always available and committed to your success.
+          Always available and committed.
         </p>
       </div>
 
@@ -292,11 +336,15 @@
   </section>
 
   <!-- SERVICES -->
+
   <section id="services">
 
     <div class="section-title">
       <h2>My Services</h2>
-      <p>Professional Web Solutions Tailored for Your Needs</p>
+
+      <p>
+        Professional Web Solutions Tailored for Your Needs
+      </p>
     </div>
 
     <div class="cards">
@@ -313,7 +361,7 @@
         <h1>🎨</h1>
         <h3>UI/UX Design</h3>
         <p>
-          Beautiful and intuitive user interfaces.
+          Beautiful and intuitive interfaces.
         </p>
       </div>
 
@@ -321,7 +369,7 @@
         <h1>📱</h1>
         <h3>Responsive Design</h3>
         <p>
-          Optimized for all devices and screen sizes.
+          Optimized for all devices.
         </p>
       </div>
 
@@ -329,7 +377,7 @@
         <h1>⚡</h1>
         <h3>Performance Optimization</h3>
         <p>
-          Lightning-fast loading times and smooth interactions.
+          Fast loading and smooth interaction.
         </p>
       </div>
 
@@ -337,7 +385,7 @@
         <h1>🔍</h1>
         <h3>SEO Optimization</h3>
         <p>
-          Rank higher and drive more traffic.
+          Rank higher and grow traffic.
         </p>
       </div>
 
@@ -345,7 +393,7 @@
         <h1>🛠️</h1>
         <h3>Maintenance & Support</h3>
         <p>
-          Ongoing support and maintenance services.
+          Ongoing support and maintenance.
         </p>
       </div>
 
@@ -354,11 +402,15 @@
   </section>
 
   <!-- CONTACT -->
+
   <section id="contact">
 
     <div class="section-title">
+
       <h2>Get In Touch</h2>
+
       <p>Let's discuss your next project</p>
+
     </div>
 
     <div class="contact-box">
@@ -393,47 +445,58 @@
 
       <textarea placeholder="Tell me about your project..."></textarea>
 
-      <button class="btn">Send Message</button>
+      <button class="btn">
+        Send Message
+      </button>
 
     </form>
 
   </section>
 
   <!-- FOOTER -->
+
   <footer>
 
     <div class="footer-content">
 
       <div>
+
         <h2>Kelvin Chidera</h2>
 
         <p>
           Web developer and designer creating beautiful digital experiences.
         </p>
+
       </div>
 
       <div>
+
         <h3>Quick Links</h3>
 
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
+
       </div>
 
       <div>
+
         <h3>Follow Me</h3>
 
         <a href="#">LinkedIn</a>
         <a href="#">GitHub</a>
         <a href="#">Twitter</a>
+
       </div>
 
     </div>
 
     <div class="copyright">
-      © 2026 Kelvin Chidera. All rights reserved. |
-      Designed & Built by Me
+
+      © 2026 Kelvin Chidera. All rights reserved.
+      | Designed & Built by Me
+
     </div>
 
   </footer>
