@@ -488,3 +488,103 @@ body {
         padding: 2rem;
     }
 }
+    /* RESPONSIVE DESIGN */
+
+@media(max-width:768px){
+
+  /* HEADER */
+
+  header{
+    flex-direction:column;
+    padding:20px;
+    text-align:center;
+  }
+
+  nav{
+    margin-top:15px;
+  }
+
+  nav a{
+    margin:10px;
+    display:inline-block;
+  }
+
+  /* HERO SECTION */
+
+  .hero{
+    padding:40px 20px;
+    text-align:center;
+    align-items:center;
+  }
+
+  .hero h1{
+    font-size:2.5rem;
+  }
+
+  .hero h3{
+    font-size:1.2rem;
+  }
+
+  .hero p{
+    font-size:15px;
+  }
+
+  .buttons{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .btn{
+    width:100%;
+    text-align:center;
+  }
+
+  /* FEATURES */
+
+  .features{
+    text-align:left;
+    width:100%;
+  }
+
+  /* SECTIONS */
+
+  section{
+    padding:60px 20px;
+  }
+
+  /* CARDS */
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  .card{
+    width:100%;
+  }
+
+  /* CONTACT BOX */
+
+  .contact-box{
+    grid-template-columns:1fr;
+  }
+
+  /* FORM */
+
+  form{
+    width:100%;
+  }
+
+  input,
+  textarea{
+    width:100%;
+  }
+
+  /* FOOTER */
+
+  .footer-content{
+    flex-direction:column;
+    text-align:center;
+  }
+
+}
